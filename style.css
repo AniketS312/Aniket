@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;600;700&family=Open+Sans&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Newsreader", serif;
+  font-weight: 700;
+}
+
+p,
+span,
+a,
+td,
+li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1.2rem;
+  list-style-type: circle;
+}
+
+td {
+  font-size: 1.2rem;
+}
+
+.m-right {
+  height: 100vh;
+  margin-right: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 0 8%;
+}
+
+.m-bottom {
+  margin-bottom: 0.5rem;
+}
+
+.ul {
+  list-style-type: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #466362;
+  margin-right: 0.5rem;
+}
+
+.more a {
+  display: flex;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.more a svg {
+  position: relative;
+  margin-right: 1rem;
+  transition: top 0.3s ease-in-out;
+  top: 0;
+}
+
+.more a:hover svg {
+  top: 0.5rem;
+}
+
+.image-section {
+  background-color: #7eb2dd;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.image-section__menu ul {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 60%;
+  transform: translateY(50%);
+  display: flex;
+  justify-content: space-around;
+}
+.image-section__menu ul li a {
+  color: white;
+}
+.image-section img {
+  width: 400px;
+  height: 550px;
+}
+.image-section button {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  color: white;
+  background-color: #000;
+  padding: 0.7rem 1.5rem;
+}
+.image-section .scroll a {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  color: white;
+  fill: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.image-section .scroll a svg {
+  margin-right: 0.5rem;
+}
+
+.introduction-section__title {
+  margin-bottom: 3rem;
+}
+.introduction-section__info .table {
+  display: flex;
+}
+.introduction-section__info .table div {
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+}
+.introduction-section__info .table .titles {
+  font-weight: 700;
+}
+.introduction-section__contact {
+  width: 100%;
+}
+.introduction-section__contact ul {
+  margin-right: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.introduction-section__contact a {
+  transition: font-weight 0.7s;
+}
+.introduction-section__contact a:hover {
+  font-weight: 700;
+}
+
+.experience-section__title {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.experience-section__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #466362;
+  width: 50%;
+  margin-left: 2rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.experience-section .skills-list li {
+  margin-bottom: 1rem;
+}
+
+.about-section__title {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.about-section__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #466362;
+  width: 55%;
+  margin-left: 2rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.about-section__content p {
+  margin-bottom: 2rem;
+}
+
+.work-section__title {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.work-section__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #466362;
+  width: 25%;
+  margin-left: 2rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.work-section__content {
+  margin-left: 1rem;
+}
+.work-section__content .location {
+  margin-bottom: 2rem;
+}
+.work-section__content h6 {
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-section h6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.portfolio-section__title {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.portfolio-section__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #466362;
+  width: 50%;
+  margin-left: 2rem;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+.portfolio-section .accordian {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-section .accordian .general-info {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid rgba(221, 221, 221, 0.7);
+  border-bottom: 1px solid rgba(221, 221, 221, 0.7);
+  z-index: 100;
+}
+.portfolio-section .accordian .general-info .dropdown {
+  transition: transform 0.3s;
+}
+.portfolio-section .accordian .general-info .dropdown.active {
+  transform: translateX(180deg);
+}
+.portfolio-section .accordian .bottom-border {
+  transition: all 0.5s ease-in-out;
+  border-bottom: none;
+}
+.portfolio-section .accordian .more-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 0;
+  opacity: 0;
+}
+.portfolio-section .accordian .more-info p {
+  margin-bottom: 0.5rem;
+}
+.portfolio-section .accordian .more-info .links {
+  margin-bottom: 1rem;
+}
+.portfolio-section .accordian .more-info a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.portfolio-section .accordian .more-info.show {
+  height: auto;
+  opacity: 1;
+  transition: height 0.3s ease-in, opacity 0.5s;
+}
+.portfolio-section .accordian .more a {
+  text-decoration: underline;
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

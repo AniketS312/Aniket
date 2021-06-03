@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;600;700&family=Open+Sans&display=swap");
+
+//
+
+$font-newsreader: "Newsreader", serif;
+$font-opensans: "Open Sans", sans-serif;
+$color-seagreen: rgb(134, 186, 144);
+$color-umberbrown: rgb(126, 101, 81);
+$color-spacegrey: rgb(70, 99, 98);
+$color-apricotorange: rgb(244, 178, 102);
+$color-areoblue: rgb(126, 178, 221);
+$color-grey-custom: rgba(221, 221, 221, 0.7);
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+// Font
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-newsreader;
+  font-weight: 700;
+}
+
+p,
+span,
+a,
+td,
+li {
+  font-family: $font-opensans;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1.2rem;
+  list-style-type: circle;
+}
+
+td {
+  font-size: 1.2rem;
+}
+
+// End of Font
+
+// Fixed
+
+// End of fixed
+
+// Margin and Padding
+.m-right {
+  height: 100vh;
+  margin-right: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 0 8%;
+}
+
+.m-bottom {
+  margin-bottom: 0.5rem;
+}
+
+// End of margin and padding
+
+// List style decoration
+.ul {
+  list-style-type: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: $color-spacegrey;
+  margin-right: 0.5rem;
+}
+// End of list style
+// About me section - for arrow on left side
+.more a {
+  display: flex;
+  cursor: pointer;
+  margin-top: 2rem;
+  svg {
+    position: relative;
+    margin-right: 1rem;
+    transition: top 0.3s ease-in-out;
+    top: 0;
+  }
+}
+
+.more a:hover {
+  svg {
+    top: 0.5rem;
+  }
+}
+// End of About me
