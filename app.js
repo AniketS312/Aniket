@@ -1,5 +1,14 @@
 const icon = document.querySelectorAll(".dropdown");
 const scrollButton = document.getElementById("scroll");
+const resumeButton = document.getElementById("resume");
+const popup = document.getElementById("popup");
+const exitPopup = document.getElementById("exit-popup");
+const hiddenMenu = document.getElementById("hidden-menu");
+const exitMenuButton = document.getElementById("menu-exit");
+const showmenuButton = document.getElementById("show-menu");
+const menuItems = document.querySelectorAll("menu-item");
+
+// Make portfolio section work
 icon.forEach((element) => {
   element.addEventListener("click", function (e) {
     // All Elements Execution
@@ -19,6 +28,7 @@ function showInfo(element) {
   element.parentElement.nextElementSibling.classList.toggle("show");
 }
 
+// Show Back to top button
 window.onscroll = function () {
   if (window.scrollY > 500) {
     scrollButton.style.opacity = "1";
@@ -26,3 +36,26 @@ window.onscroll = function () {
     scrollButton.style.opacity = "0";
   }
 };
+
+// Function to make popup work
+// Make  popup appear
+resumeButton.addEventListener("click", function () {
+  popup.style.display = "flex";
+});
+
+exitPopup.addEventListener("click", function () {
+  popup.style.display = "none";
+});
+
+// Hide/Show mobile menu
+exitMenuButton.addEventListener("click", hideMenu);
+showmenuButton.addEventListener("click", showmenu);
+menuItems.forEach((element) => element.addEventListener("click"), hideMenu);
+
+function hideMenu() {
+  hiddenMenu.style.display = "none";
+}
+
+function showmenu() {
+  hiddenMenu.style.display = "flex";
+}

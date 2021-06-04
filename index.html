@@ -10,16 +10,39 @@
 
 </head>
 <body>
+  <!-- Hidden Mobile Menu --> 
+  <div class="hidden-menu" id="hidden-menu">
+    <svg width="24" id="menu-exit" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+      <path d="M22.7071 1.29289C23.0976 1.68342 23.0976 2.31658 22.7071 2.70711L2.70711 22.7071C2.31658 23.0976 1.68342 23.0976 1.29289 22.7071C0.902369 22.3166 0.902369 21.6834 1.29289 21.2929L21.2929 1.29289C21.6834 0.902369 22.3166 0.902369 22.7071 1.29289Z" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
+      <path d="M1.29289 1.29289C1.68342 0.902369 2.31658 0.902369 2.70711 1.29289L22.7071 21.2929C23.0976 21.6834 23.0976 22.3166 22.7071 22.7071C22.3166 23.0976 21.6834 23.0976 21.2929 22.7071L1.29289 2.70711C0.902369 2.31658 0.902369 1.68342 1.29289 1.29289Z" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
+      </svg>
+    <ul class="ul">
+      <li><a href="#my-work" id="menu-item">My Work</a></li>
+      <li><a href="#my-skills" id="menu-item">About Me</a></li>  
+      <li><a href="#contact" id="menu-item">Contact Me</a></li>
+    </ul>
+  </div>
+  <!-- End of Hidden Mobile Menu -->
   <!-- Right Fixed Section -->
+  <div class="mobile-menu">
+    <button id="resume">View Resume</button>
+    <svg id="show-menu" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+      <path stroke-linecap="round" stroke-width="2" stroke="#221b38" d="M2 6H22"></path>
+      <path stroke-linecap="round" stroke-width="2" stroke="#221b38" d="M2 12H14"></path>
+      <path stroke-linecap="round" stroke-width="2" stroke="#221b38" d="M2 18H22"></path>
+      </svg>
+    
+  </div>
   <div class="image-section">
+
     <div class="image-section__menu">
       <ul class="ul">
         <li><a href="#my-work">My Work</a></li>
         <li><a href="#my-skills">About Me</a></li>  
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
     </div>
-    <button>View Resume</button>
+    <button id="resume">View Resume</button>
     <img src="./img/aniket in front of drapes.jpg" alt="Picture of Aniket">
     <div class="scroll">
       <a href="#top" id="scroll">
@@ -54,7 +77,7 @@
     <ul class="ul">
       <li><a href="https://github.com/AniketS312" target="_blank">Github</a></li>
       <li><a href="https://www.linkedin.com/in/aniket-sharma-186748b7/" target="_blank">Linkedin</a></li>
-      <li><a href="contact">Contact Me</a></li>
+      <li><a href="#contact">Contact Me</a></li>
     </ul>
   </div>
 </section>
@@ -75,8 +98,8 @@
       </a>
     </div>
     <div class="more-info show" id="more-info">
-      <p>This weather app is built to be intensive. It starts of by getting your local weather. But feel free to search for your desied location to plan our your trip.</p>
-      <img src="./img/project lana.png" height="200px" width="300px" alt="">
+      <p>This weather app is built to be intensive using Open Weather Map API. It starts of by getting your local weather. But feel free to search for your desired location to plan out your trip.</p>
+      <img src="./img/Project - Weather App.png" height="200px" width="330px" alt="">
       <div class="links">
         <a href="https://anikets312.github.io/Weather-App/" target="_blank">Demo</a>
         <a href="https://github.com/AniketS312/Weather-App" target="_blank">Github</a>
@@ -93,8 +116,8 @@
       </a>
     </div>
     <div class="more-info" id="more-info">
-      <p>A classy mordern design for an architecture firm. Arch showcases prior projects and professionalism while providing a small taste of design style of the company.</p>
-      <img src="./img/project lana.png" height="200px" width="300px" alt="">
+      <p>A classy modern design for an architecture firm using SCSS and Google Maps API. Arch showcases prior projects and professionalism while providing a small taste of design style of the company.</p>
+      <img src="./img/project-Arch.png" height="200px" width="350px" alt="">
       <div class="links">
         <a href="https://anikets312.github.io/Weather-App/" target="_blank">Demo</a>
         <a href="https://github.com/AniketS312/Weather-App" target="_blank">Github</a>
@@ -119,6 +142,23 @@
       </div>
     </div>
     </div>
+    <div class="accordian">
+      <div class="general-info bottom-border" id="general-info">
+      <h6>Lexie Drew</h6>
+      <a href="#" id="dropdown" class="dropdown">
+        <svg id="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+          <path d="M3.29289 7.29289C3.68342 6.90237 4.31658 6.90237 4.70711 7.29289L12 14.5858L19.2929 7.29289C19.6834 6.90237 20.3166 6.90237 20.7071 7.29289C21.0976 7.68342 21.0976 8.31658 20.7071 8.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L3.29289 8.70711C2.90237 8.31658 2.90237 7.68342 3.29289 7.29289Z" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="more-info" id="more-info">
+      <p>Using the power of Wix Velo which features react, We redeisgned the website for the client and also included a complex related products feature ont he product page based on the customers need.</p>
+      <img src="./img/lexie-drew.png" height="200px" width="300px" alt="">
+      <div class="links">
+        <a href="https://www.lexiedrew.com/" target="_blank">Demo</a>
+      </div>
+    </div>
+    </div>
   </div>
 </section>
 <!-- End of Portfolio -->
@@ -134,7 +174,7 @@
       <li>Quickly adapted to new tools to better assist clients such as GSuite, Canva, Photopea, WeVideo and more</li>
     </ul>
     <div class="more">
-      <a href="">
+      <a href="#work-experience">
         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
           <path d="M11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L20.7071 4.70711C21.0976 4.31658 21.0976 3.68342 20.7071 3.29289C20.3166 2.90237 19.6834 2.90237 19.2929 3.29289L12 10.5858L4.70711 3.29289C4.31658 2.90237 3.68342 2.90237 3.29289 3.29289C2.90237 3.68342 2.90237 4.31658 3.29289 4.70711L11.2929 12.7071Z" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
           <path d="M11.2929 20.7071C11.6834 21.0976 12.3166 21.0976 12.7071 20.7071L20.7071 12.7071C21.0976 12.3166 21.0976 11.6834 20.7071 11.2929C20.3166 10.9024 19.6834 10.9024 19.2929 11.2929L12 18.5858L4.70711 11.2929C4.31658 10.9024 3.68342 10.9024 3.29289 11.2929C2.90237 11.6834 2.90237 12.3166 3.29289 12.7071L11.2929 20.7071Z" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
@@ -145,7 +185,7 @@
 </section>
 <!-- End of skills Setion -->
 <!-- Work Experience -->
-<section class="work-section m-right">
+<section class="work-section m-right" id="work-experience">
   <div class="work-section__title m-right__title"> 
     <h4>Work Experience</h4>
   </div>
@@ -166,18 +206,18 @@
      <p class="location">Central Alberta</p>
   </div>
   <div class="more">
-    <a href="">
+    <a href="#about-me">
       <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
         <path d="M11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L20.7071 4.70711C21.0976 4.31658 21.0976 3.68342 20.7071 3.29289C20.3166 2.90237 19.6834 2.90237 19.2929 3.29289L12 10.5858L4.70711 3.29289C4.31658 2.90237 3.68342 2.90237 3.29289 3.29289C2.90237 3.68342 2.90237 4.31658 3.29289 4.70711L11.2929 12.7071Z" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
         <path d="M11.2929 20.7071C11.6834 21.0976 12.3166 21.0976 12.7071 20.7071L20.7071 12.7071C21.0976 12.3166 21.0976 11.6834 20.7071 11.2929C20.3166 10.9024 19.6834 10.9024 19.2929 11.2929L12 18.5858L4.70711 11.2929C4.31658 10.9024 3.68342 10.9024 3.29289 11.2929C2.90237 11.6834 2.90237 12.3166 3.29289 12.7071L11.2929 20.7071Z" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
         </svg>
-        <p>My Work Experience</p>
+        <p>A Little About Me</p>
     </a>
   </div>
 </section>
 <!-- End of Work Experience -->
 <!-- About Section -->
-<section class="about-section m-right">
+<section class="about-section m-right" id="about-me">
   <div class="about-section__title m-right__title data-aos="fade-up" id="experience">
     <h4>About Me</h4>
   </div>
@@ -191,11 +231,42 @@
         <path d="M11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L20.7071 4.70711C21.0976 4.31658 21.0976 3.68342 20.7071 3.29289C20.3166 2.90237 19.6834 2.90237 19.2929 3.29289L12 10.5858L4.70711 3.29289C4.31658 2.90237 3.68342 2.90237 3.29289 3.29289C2.90237 3.68342 2.90237 4.31658 3.29289 4.70711L11.2929 12.7071Z" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
         <path d="M11.2929 20.7071C11.6834 21.0976 12.3166 21.0976 12.7071 20.7071L20.7071 12.7071C21.0976 12.3166 21.0976 11.6834 20.7071 11.2929C20.3166 10.9024 19.6834 10.9024 19.2929 11.2929L12 18.5858L4.70711 11.2929C4.31658 10.9024 3.68342 10.9024 3.29289 11.2929C2.90237 11.6834 2.90237 12.3166 3.29289 12.7071L11.2929 20.7071Z" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
         </svg>
-        <p>My Work Experience</p>
+        <p>Contact Me Today</p>
     </a>
   </div>
 </section>
 <!-- End of About Section -->
+<!-- Contact Section -->
+  <section class="contact-form m-right" id="contact">
+    <div class="form-container">
+      <div class="form-container__title m-right__title" data-aos="fade-up" id="experience">
+        <h4>Contact Me</h4>
+      </div>
+           <form action="https://formsubmit.co/bcd4ef92fe01b6902e0523fe15d10753" method="POST"">
+             <label for="name">Your Name</label><br/>
+             <input type="text" name="name" id="name"><br/>
+             <label for="email">Your Email</label><br/>
+             <input type="email" name="email" id="email"><br/>
+             <label for="message">Your Messaage</label><br/>
+             <textarea name="message" id="" cols="30" rows="10"></textarea><br/>
+             <input type="submit" value="Submit">
+           </form>
+    </div>
+  </section>
+  <!-- Resume Popup -->
+  <div class="popup-container" id="popup">
+    <div class="popup">
+      <p>Sorry but I had to get rid of my resume online. As some of my references were being disturbed at random times of the night, I would appriciate it if you can reach out to me via the contact form and I can personally send you my resume.</p>
+      <p>Thank you for understanding.</p>
+      <svg id="exit-popup" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke="#4a4a4a" fill="none" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke="#4a4a4a" d="M8 16L16 8"></path>
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke="#4a4a4a" d="M8 8L16 16"></path>
+        </svg>
+        <a href="#contact" id="contact-button">Exit</a>
+    </div>
+  </div>
+<!-- End of Contact Section -->
 <script src="./app.js"></script>
 </body>
 </html>

@@ -11,6 +11,13 @@
   top: 0;
   right: 0;
 
+  .mobile-menu {
+    display: none;
+  }
+  .hidden-menu {
+    display: none;
+  }
+
   &__menu ul {
     position: absolute;
     top: 5%;
@@ -35,6 +42,11 @@
     color: white;
     background-color: #000;
     padding: 0.7rem 1.5rem;
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: none;
   }
 
   .scroll a {
@@ -254,3 +266,102 @@
   }
 }
 // End of Portfolio Section
+// Contact Section
+.form-container {
+  height: 50%;
+  &__title {
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  &__title::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $color-spacegrey;
+    width: 50%;
+    margin-left: 2rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  form {
+    margin-top: 3rem;
+    height: 100%;
+    width: 100%;
+    label {
+      font-size: 1.3rem;
+    }
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid black;
+      margin-bottom: 1rem;
+      height: 10%;
+    }
+    textarea {
+      margin-top: 1rem;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid black;
+      margin-bottom: 1rem;
+      resize: none;
+    }
+    input:last-of-type {
+      width: 30%;
+      border: none;
+      color: white;
+      background-color: $color-umberbrown;
+      margin-top: 1rem;
+      padding: 0.8rem 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input:focus,
+    textarea:focus {
+      outline: none;
+    }
+  }
+}
+// End of contact section
+// Popup
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  .popup {
+    width: 50%;
+    height: 50%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+    line-height: 1.5rem;
+    position: relative;
+    p {
+      margin-bottom: 2rem;
+    }
+    svg {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      cursor: pointer;
+    }
+    a {
+      border: 2px solid $color-spacegrey;
+      padding: 0.5rem 2.5rem;
+    }
+  }
+}
+// End of popup
