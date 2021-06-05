@@ -107,6 +107,14 @@ a {
   top: 0.5rem;
 }
 
+.hidden-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 .image-section {
   background-color: #7eb2dd;
   width: 50vw;
@@ -118,12 +126,6 @@ a {
   position: fixed;
   top: 0;
   right: 0;
-}
-.image-section .mobile-menu {
-  display: none;
-}
-.image-section .hidden-menu {
-  display: none;
 }
 .image-section__menu ul {
   position: absolute;
@@ -195,69 +197,6 @@ a {
 }
 .introduction-section__contact a:hover {
   font-weight: 700;
-}
-
-.experience-section__title {
-  margin-bottom: 2rem;
-  position: relative;
-}
-.experience-section__title::after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  background-color: #466362;
-  width: 50%;
-  margin-left: 2rem;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.experience-section .skills-list li {
-  margin-bottom: 1rem;
-}
-
-.about-section__title {
-  margin-bottom: 3rem;
-  position: relative;
-}
-.about-section__title::after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  background-color: #466362;
-  width: 55%;
-  margin-left: 2rem;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.about-section__content p {
-  margin-bottom: 2rem;
-}
-
-.work-section__title {
-  margin-bottom: 3rem;
-  position: relative;
-}
-.work-section__title::after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  background-color: #466362;
-  width: 25%;
-  margin-left: 2rem;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.work-section__content {
-  margin-left: 1rem;
-}
-.work-section__content .location {
-  margin-bottom: 2rem;
-}
-.work-section__content h6 {
-  margin-bottom: 0.5rem;
 }
 
 .portfolio-section h6 {
@@ -332,6 +271,69 @@ a {
 .portfolio-section .accordian .more a {
   text-decoration: underline;
   margin-right: 1rem;
+}
+
+.experience-section__title {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.experience-section__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #466362;
+  width: 50%;
+  margin-left: 2rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.experience-section .skills-list li {
+  margin-bottom: 1rem;
+}
+
+.work-section__title {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.work-section__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #466362;
+  width: 25%;
+  margin-left: 2rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.work-section__content {
+  margin-left: 1rem;
+}
+.work-section__content .location {
+  margin-bottom: 2rem;
+}
+.work-section__content h6 {
+  margin-bottom: 0.5rem;
+}
+
+.about-section__title {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.about-section__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #466362;
+  width: 55%;
+  margin-left: 2rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.about-section__content p {
+  margin-bottom: 2rem;
 }
 
 .form-container {
@@ -464,7 +466,7 @@ a {
 
   .mobile-menu {
     background-color: whitesmoke;
-    width: 100%;
+    width: 100vw;
     display: block;
     position: absolute;
     top: 0;
@@ -496,7 +498,7 @@ a {
   .image-section {
     position: static;
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -512,6 +514,178 @@ a {
   .image-section button {
     display: none;
   }
+
+  .introduction-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+  }
+  .introduction-section__title {
+    text-align: center;
+    align-items: center;
+  }
+  .introduction-section__contact {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .introduction-section__contact ul {
+    margin-right: 0;
+    width: 50%;
+  }
+  .introduction-section__contact ul li {
+    align-self: center;
+  }
+
+  .portfolio-section__title::after {
+    width: 60%;
+  }
+
+  .experience-section__title::after {
+    width: 60%;
+  }
+
+  .work-section__title::after {
+    width: 50%;
+  }
+  .work-section__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-section__title::after {
+    width: 65%;
+  }
+
+  .form-container__title::after {
+    width: 60%;
+  }
+  .form-container form textarea {
+    height: 40%;
+  }
+  .form-container form input[type=submit] {
+    margin: 0;
+    height: 12%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  p,
+span,
+a,
+td,
+li,
+input,
+textarea {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 3.3rem;
+    font-weight: 500;
+  }
+
+  .image-section img {
+    width: 40%;
+  }
+
+  .portfolio-section__title::after {
+    width: 60%;
+  }
+
+  .experience-section {
+    height: 60vh;
+  }
+  .experience-section__title::after {
+    width: 60%;
+  }
+
+  .work-section {
+    height: 60vh;
+  }
+  .work-section__title::after {
+    width: 30%;
+  }
+  .work-section__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-section {
+    height: 60vh;
+  }
+  .about-section__title::after {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 376px) {
+  p,
+span,
+a,
+td,
+li,
+input,
+textarea {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .image-section img {
+    width: 70%;
+  }
+
+  .introduction-section {
+    height: 40vh;
+  }
+  .introduction-section__info {
+    display: none;
+  }
+  .introduction-section__contact ul {
+    width: 100%;
+  }
+  .introduction-section__contact ul li a {
+    font-size: 1rem;
+  }
+
+  .portfolio-section__title::after {
+    width: 50%;
+  }
+
+  .experience-section__title::after {
+    width: 50%;
+  }
+
+  .work-section {
+    height: 90vh;
+  }
+  .work-section__title::after {
+    width: 20%;
+  }
+  .work-section__content {
+    flex-direction: column;
+  }
+}
+.form-container__title::after {
+  width: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,9 @@ const exitPopup = document.getElementById("exit-popup");
 const hiddenMenu = document.getElementById("hidden-menu");
 const exitMenuButton = document.getElementById("menu-exit");
 const showmenuButton = document.getElementById("show-menu");
-const menuItems = document.querySelectorAll("menu-item");
+const menuItems = document.querySelectorAll("#menu-item");
+
+console.log(menuItems);
 
 // Make portfolio section work
 icon.forEach((element) => {
@@ -50,10 +52,11 @@ exitPopup.addEventListener("click", function () {
 // Hide/Show mobile menu
 exitMenuButton.addEventListener("click", hideMenu);
 showmenuButton.addEventListener("click", showmenu);
-menuItems.forEach((element) => element.addEventListener("click"), hideMenu);
+menuItems.forEach((element) => element.addEventListener("click", hideMenu));
 
 function hideMenu() {
   hiddenMenu.style.display = "none";
+  console.log("clicked");
 }
 
 function showmenu() {

@@ -1,0 +1,285 @@
+// Ipad turned
+@media only screen and (max-width: 1025px) {
+  .m-right {
+    margin-right: 0;
+  }
+
+  .hidden-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: white;
+
+    svg {
+      position: absolute;
+      top: 5%;
+      right: 10%;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      li {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .mobile-menu {
+    background-color: whitesmoke;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8vh;
+
+    button {
+      position: relative;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background-color: #000;
+      padding: 0.7rem 1.5rem;
+      cursor: pointer;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    svg {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translate(0, -50%);
+      cursor: pointer;
+    }
+  }
+
+  .image-section {
+    position: static;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-top: 2rem;
+      width: 30%;
+      height: 70%;
+    }
+
+    &__menu {
+      display: none;
+    }
+    button {
+      display: none;
+    }
+  }
+
+  .introduction-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+
+    &__title {
+      text-align: center;
+      align-items: center;
+    }
+    &__contact {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      ul {
+        margin-right: 0;
+        width: 50%;
+        li {
+          align-self: center;
+        }
+      }
+    }
+  }
+  .portfolio-section {
+    &__title::after {
+      width: 60%;
+    }
+  }
+  .experience-section {
+    &__title::after {
+      width: 60%;
+    }
+  }
+  .work-section {
+    &__title::after {
+      width: 50%;
+    }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .about-section {
+    &__title::after {
+      width: 65%;
+    }
+  }
+
+  .form-container {
+    &__title::after {
+      width: 60%;
+    }
+    form textarea {
+      height: 40%;
+    }
+    form input[type="submit"] {
+      margin: 0;
+      height: 12%;
+    }
+  }
+}
+// Ipad standing up
+@media only screen and (max-width: 769px) {
+  // Font
+  p,
+  span,
+  a,
+  td,
+  li,
+  input,
+  textarea {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 3.3rem;
+    font-weight: 500;
+  }
+  .image-section {
+    img {
+      width: 40%;
+    }
+  }
+  .portfolio-section {
+    &__title::after {
+      width: 60%;
+    }
+  }
+  .experience-section {
+    height: 60vh;
+    &__title::after {
+      width: 60%;
+    }
+  }
+  .work-section {
+    height: 60vh;
+    &__title::after {
+      width: 30%;
+    }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .about-section {
+    height: 60vh;
+    &__title::after {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  p,
+  span,
+  a,
+  td,
+  li,
+  input,
+  textarea {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .image-section {
+    img {
+      width: 70%;
+    }
+  }
+
+  .introduction-section {
+    height: 40vh;
+    &__info {
+      display: none;
+    }
+    &__contact {
+      ul {
+        width: 100%;
+        li a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .portfolio-section {
+    &__title::after {
+      width: 50%;
+    }
+  }
+
+  .experience-section {
+    &__title::after {
+      width: 50%;
+    }
+  }
+
+  .work-section {
+    height: 90vh;
+    &__title::after {
+      width: 20%;
+    }
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
+.form-container {
+  &__title::after {
+    width: 40%;
+  }
+}

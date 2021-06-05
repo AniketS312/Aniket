@@ -1,4 +1,10 @@
 // Image Section - Right Fixed
+.hidden-menu {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
 .image-section {
   background-color: $color-areoblue;
   width: 50vw;
@@ -10,13 +16,6 @@
   position: fixed;
   top: 0;
   right: 0;
-
-  .mobile-menu {
-    display: none;
-  }
-  .hidden-menu {
-    display: none;
-  }
 
   &__menu ul {
     position: absolute;
@@ -73,7 +72,6 @@
   &__info {
     .table {
       display: flex;
-
       div {
         margin-right: 2rem;
         margin-bottom: 0.5rem;
@@ -104,87 +102,6 @@
   }
 }
 // End of Introduction Section
-// Skills & Experience Section
-.experience-section {
-  &__title {
-    margin-bottom: 2rem;
-    position: relative;
-  }
-  &__title::after {
-    position: absolute;
-    content: "";
-    height: 1px;
-    background-color: $color-spacegrey;
-    width: 50%;
-    margin-left: 2rem;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .skills-list {
-    li {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-// End of Skills and Experience Section
-// About Section
-.about-section {
-  &__title {
-    margin-bottom: 3rem;
-    position: relative;
-  }
-  &__title::after {
-    position: absolute;
-    content: "";
-    height: 1px;
-    background-color: $color-spacegrey;
-    width: 55%;
-    margin-left: 2rem;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  &__content {
-    p {
-      margin-bottom: 2rem;
-    }
-  }
-}
-// End of About Section
-// Work Experience Section
-.work-section {
-  &__title {
-    margin-bottom: 3rem;
-    position: relative;
-  }
-  &__title::after {
-    position: absolute;
-    content: "";
-    height: 1px;
-    background-color: $color-spacegrey;
-    width: 25%;
-    margin-left: 2rem;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  &__content {
-    margin-left: 1rem;
-
-    .location {
-      margin-bottom: 2rem;
-    }
-
-    h6 {
-      margin-bottom: 0.5rem;
-    }
-  }
-}
-// End of Work Experience Section
 // Portfolio Section
 .portfolio-section {
   h6 {
@@ -266,6 +183,86 @@
   }
 }
 // End of Portfolio Section
+// Skills & Experience Section
+.experience-section {
+  &__title {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  &__title::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $color-spacegrey;
+    width: 50%;
+    margin-left: 2rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .skills-list {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+// End of Skills and Experience Section
+// Work Experience Section
+.work-section {
+  &__title {
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  &__title::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $color-spacegrey;
+    width: 25%;
+    margin-left: 2rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__content {
+    margin-left: 1rem;
+
+    .location {
+      margin-bottom: 2rem;
+    }
+
+    h6 {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+// End of Work Experience Section
+// About Section
+.about-section {
+  &__title {
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  &__title::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $color-spacegrey;
+    width: 55%;
+    margin-left: 2rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__content {
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
+// End of About Section
 // Contact Section
 .form-container {
   height: 50%;
