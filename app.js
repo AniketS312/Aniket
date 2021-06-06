@@ -1,14 +1,13 @@
 const icon = document.querySelectorAll(".dropdown");
 const scrollButton = document.getElementById("scroll");
-const resumeButton = document.getElementById("resume");
+const resumeButton = document.querySelectorAll("#resume");
 const popup = document.getElementById("popup");
 const exitPopup = document.getElementById("exit-popup");
 const hiddenMenu = document.getElementById("hidden-menu");
 const exitMenuButton = document.getElementById("menu-exit");
 const showmenuButton = document.getElementById("show-menu");
 const menuItems = document.querySelectorAll("#menu-item");
-
-console.log(menuItems);
+const exitButton = document.getElementById("contact-button");
 
 // Make portfolio section work
 icon.forEach((element) => {
@@ -41,11 +40,16 @@ window.onscroll = function () {
 
 // Function to make popup work
 // Make  popup appear
-resumeButton.addEventListener("click", function () {
-  popup.style.display = "flex";
-});
+resumeButton.forEach((element) =>
+  element.addEventListener("click", function () {
+    popup.style.display = "flex";
+  })
+);
 
 exitPopup.addEventListener("click", function () {
+  popup.style.display = "none";
+});
+exitButton.addEventListener("click", function () {
   popup.style.display = "none";
 });
 

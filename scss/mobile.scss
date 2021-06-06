@@ -94,24 +94,27 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
+    height: 70vh;
 
     &__title {
       text-align: center;
       align-items: center;
     }
+    &__info {
+      align-self: flex-start;
+    }
     &__contact {
       margin-top: 1rem;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       width: 100%;
       ul {
         margin-right: 0;
         width: 50%;
-        li {
-          align-self: center;
-        }
       }
+    }
+    .more {
+      align-self: flex-start;
     }
   }
   .portfolio-section {
@@ -154,8 +157,9 @@
     }
   }
 }
+
 // Ipad standing up
-@media only screen and (max-width: 769px) {
+@media (max-height: 1025px) and (max-width: 769px) {
   // Font
   p,
   span,
@@ -210,9 +214,14 @@
       width: 50%;
     }
   }
+  .popup-container {
+    .popup {
+      width: 70%;
+    }
+  }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 415px) {
   p,
   span,
   a,
@@ -235,6 +244,10 @@
     font-size: 2rem;
   }
 
+  .hidden-menu ul li a {
+    font-size: 1.2rem;
+  }
+
   .image-section {
     img {
       width: 70%;
@@ -242,7 +255,7 @@
   }
 
   .introduction-section {
-    height: 40vh;
+    height: 60vh;
     &__info {
       display: none;
     }
@@ -263,6 +276,7 @@
   }
 
   .experience-section {
+    margin-top: 2rem;
     &__title::after {
       width: 50%;
     }
@@ -281,5 +295,68 @@
 .form-container {
   &__title::after {
     width: 40%;
+  }
+}
+
+@media (max-height: 412px) and (max-width: 824px) {
+  p,
+  span,
+  a,
+  td,
+  li,
+  input,
+  textarea {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .mobile-menu {
+    height: 15vh;
+  }
+  .image-section {
+    margin-top: 15vh;
+    height: 85vh;
+    img {
+      height: 80%;
+      width: 25vw;
+    }
+  }
+  .introduction-section {
+    margin-top: 2rem;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+  .portfolio-section {
+    height: 180vh;
+    margin-bottom: 2rem;
+    .accordian .general-info {
+      margin: 0.1;
+      padding: 1.5rem 0.5rem;
+    }
+  }
+
+  .contact-form {
+    height: 140vh;
+    form {
+      margin-bottom: 2rem;
+      input {
+        height: 10%;
+      }
+      input[type="submit"] {
+        height: 20%;
+        margin-bottom: 2rem;
+      }
+    }
   }
 }

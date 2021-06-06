@@ -519,24 +519,27 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
+    height: 70vh;
   }
   .introduction-section__title {
     text-align: center;
     align-items: center;
   }
+  .introduction-section__info {
+    align-self: flex-start;
+  }
   .introduction-section__contact {
     margin-top: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
   }
   .introduction-section__contact ul {
     margin-right: 0;
     width: 50%;
   }
-  .introduction-section__contact ul li {
-    align-self: center;
+  .introduction-section .more {
+    align-self: flex-start;
   }
 
   .portfolio-section__title::after {
@@ -571,7 +574,7 @@ a {
     height: 12%;
   }
 }
-@media only screen and (max-width: 769px) {
+@media (max-height: 1025px) and (max-width: 769px) {
   p,
 span,
 a,
@@ -625,8 +628,12 @@ textarea {
   .about-section__title::after {
     width: 50%;
   }
+
+  .popup-container .popup {
+    width: 70%;
+  }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 415px) {
   p,
 span,
 a,
@@ -649,12 +656,16 @@ textarea {
     font-size: 2rem;
   }
 
+  .hidden-menu ul li a {
+    font-size: 1.2rem;
+  }
+
   .image-section img {
     width: 70%;
   }
 
   .introduction-section {
-    height: 40vh;
+    height: 60vh;
   }
   .introduction-section__info {
     display: none;
@@ -670,6 +681,9 @@ textarea {
     width: 50%;
   }
 
+  .experience-section {
+    margin-top: 2rem;
+  }
   .experience-section__title::after {
     width: 50%;
   }
@@ -686,6 +700,72 @@ textarea {
 }
 .form-container__title::after {
   width: 40%;
+}
+
+@media (max-height: 412px) and (max-width: 824px) {
+  p,
+span,
+a,
+td,
+li,
+input,
+textarea {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .mobile-menu {
+    height: 15vh;
+  }
+
+  .image-section {
+    margin-top: 15vh;
+    height: 85vh;
+  }
+  .image-section img {
+    height: 80%;
+    width: 25vw;
+  }
+
+  .introduction-section {
+    margin-top: 2rem;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .portfolio-section {
+    height: 180vh;
+    margin-bottom: 2rem;
+  }
+  .portfolio-section .accordian .general-info {
+    margin: 0.1;
+    padding: 1.5rem 0.5rem;
+  }
+
+  .contact-form {
+    height: 140vh;
+  }
+  .contact-form form {
+    margin-bottom: 2rem;
+  }
+  .contact-form form input {
+    height: 10%;
+  }
+  .contact-form form input[type=submit] {
+    height: 20%;
+    margin-bottom: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
