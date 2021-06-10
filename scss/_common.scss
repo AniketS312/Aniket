@@ -118,11 +118,15 @@ a {
   display: flex;
   cursor: pointer;
   margin-top: 2rem;
+  z-index: 10;
   svg {
     position: relative;
     margin-right: 1rem;
     transition: top 0.3s ease-in-out;
     top: 0;
+  }
+  p {
+    cursor: pointer;
   }
 }
 

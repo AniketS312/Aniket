@@ -95,12 +95,16 @@ a {
   display: flex;
   cursor: pointer;
   margin-top: 2rem;
+  z-index: 10;
 }
 .more a svg {
   position: relative;
   margin-right: 1rem;
   transition: top 0.3s ease-in-out;
   top: 0;
+}
+.more a p {
+  cursor: pointer;
 }
 
 .more a:hover svg {
@@ -252,6 +256,7 @@ a {
   text-align: center;
   height: 0;
   opacity: 0;
+  z-index: -10;
 }
 .portfolio-section .accordian .more-info p {
   margin-bottom: 0.5rem;
@@ -267,6 +272,7 @@ a {
   height: auto;
   opacity: 1;
   transition: height 0.3s ease-in, opacity 0.5s;
+  z-index: 1;
 }
 .portfolio-section .accordian .more a {
   text-decoration: underline;
@@ -402,6 +408,7 @@ a {
   display: none;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 .popup-container .popup {
   width: 50%;
